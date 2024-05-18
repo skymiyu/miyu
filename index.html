@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Life Calendar</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="javascript.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class = "logo" >
+            <a href="">
+                <img class="logo_img" src="image/free-icon-calendar-icons-8143464.png" alt="로고 이미지">
+                <h1> DayDream<br> Capture Your Moment </h1></a>
+        </div>
+
+        <div class="nav-container">
+            <ul class="nav-list">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/">ABOUT</a>
+                </li>
+                <li>
+                    <a href="/">로그인</a>
+                </li>
+                <li>
+                    <a href="/">회원가입</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container">
+        <sidebar>
+            <div id="select-day">날짜 선택</div>
+            <div class="color-container">
+                <div class="select-color-container">
+                    <div class="text">현재 색깔 : </div>
+                    <div class="selected-color"></div>
+                </div>
+
+                <div class="color-picker">
+                    <div class="color-option" id="red"></div>
+                    <div class="color-option" id="orange"></div>
+                    <div class="color-option" id="yellow"></div>
+                    <div class="color-option" id="green"></div>
+                    <div class="color-option" id="turquoise"></div>
+                    <div class="color-option" id="blue"></div>
+                    <div class="color-option" id="purple"></div>
+                    <div class="color-option" id="gray"></div>
+                </div>
+
+                <div class="color-shadow">
+                    <div class="shadow-option" id="shadow-100"></div>
+                    <div class="shadow-option" id="shadow-75"></div>
+                    <div class="shadow-option" id="shadow-50"></div>
+                    <div class="shadow-option" id="shadow-40"></div>
+                    <div class="shadow-option" id="shadow-30"></div>
+                </div>
+                <button id="reset-color" class="reset-button">색칠 삭제</button>    
+
+
+                <div name="memo">
+                    <textarea class="input" rows="10" cols="10" onclick="this.value='';">메모</textarea>
+                    <button class="submit", id="textbutton">저장</button>
+
+                    
+                    <button class = "Font", id = fontbutton>폰트변경</button>
+                    <select class ="fontSelect" id = "fontchange">
+                        <option value="굴림체">굴림체</option>
+                        <option value="나눔고딕">나눔고딕</option>
+                        <option value="바탕체">바탕체</option>
+                        </select>
+
+                    
+                </div>
+            </div>
+
+
+        </sidebar>
+        <main>
+            <div class="indicator-date"></div>
+            <div class="calendar">
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+                <div class="month"></div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p>
+                © 2024 All Rights Reserved.
+                <a href="">개인정보 보호</a>
+                |
+                <a href="">도움말</a>
+                |
+                <a href="">서비스 약관</a>
+                |
+                <a href="">연락처</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
